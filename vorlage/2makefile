@@ -1,0 +1,14 @@
+# ----- Makefile -----
+
+.PHONY:  all  clean
+
+all: dokument.pdf
+
+clean:
+	rm -f *.o *.toc *.synctex.gz *.dvi *~ *.aux *.log
+
+dokument.pdf: *.tex
+	pdflatex $*
+	pdflatex $*
+	pdflatex $*
+

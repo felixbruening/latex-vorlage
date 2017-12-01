@@ -1,0 +1,37 @@
+\documentclass{felix-lc}
+% ----------------------------
+% Defining Header
+% ----------------------------
+\newcommand{\semester}{WiSe 2017/18}
+\newcommand{\fach}{Praktische Informatik 3}
+\newcommand{\thistitle}{Aufgabe XX}
+\newcommand{\thisstitle}{PI3}
+\newcommand{\thisname}{Felix Bruening}
+
+\begin{document}
+% -----------------------------------------
+% -------- Titelpage ----------------------
+
+\begin{titlepage}
+	\centering
+	{\scshape\LARGE Universitaet Bremen\par}
+	\vspace{1cm}
+	{\scshape\Large \fach \par}
+	\vspace{1.5cm}
+	{\huge\bfseries \thistitle \par}
+	\vspace{13cm}
+	{\Large\itshape \thisname \par}
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+
+% --------- Inhaltsverzeichnis -------------
+\thispagestyle{empty}
+\tableofcontents
+
+%%% ---------- Write some stuff -----------%
+\newpage
+\section{Loesung Aufgabe 1}
+\newpage
+\bibliography{Literaturdatenbank}
+\end{document}
